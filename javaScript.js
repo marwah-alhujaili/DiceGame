@@ -12,20 +12,17 @@
   
             document.querySelectorAll('img')[1].
           setAttribute('src', imgrandompath2);
-var audio1 =new Audio('applause.mp3');
+          var audio1 =new Audio('applause.mp3');
+
            if (randomNum1 > randomNum2) {
              document.querySelector('h1').innerHTML= "Player 1 Wins!";
-             document.querySelector('button').addEventListener('click',function(){
                             audio1.play();
-                          });
-
          }
          else if (randomNum1 < randomNum2) {
            document.querySelector('h1').innerHTML= "Player 2 Wins!";
-           document.querySelector('button').addEventListener('click',function(){
                           audio1.play();
-                        });
-                     }
+                   }
+
          else {
                 document.querySelector('h1').innerHTML = "Draw!";
          }
