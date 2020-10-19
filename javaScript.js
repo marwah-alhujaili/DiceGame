@@ -12,16 +12,15 @@
   
             document.querySelectorAll('img')[1].
           setAttribute('src', imgrandompath2);
-
+           var audio1 =new Audio('applause.mp3');
            if (randomNum1 > randomNum2) {
              document.querySelector('h1').innerHTML= "Player 1 Wins!";
-             var audio1 =new Audio('applause.mp3');
+             
                  audio1.play();             
          }
          else if (randomNum1 < randomNum2) {
            document.querySelector('h1').innerHTML= "Player 2 Wins!";
-           var audio2 =new Audio('applause.mp3');
-               audio2.play();
+               audio1.play();
                      }
          else {
                 document.querySelector('h1').innerHTML = "Draw!";
