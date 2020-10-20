@@ -14,18 +14,17 @@
           setAttribute('src', imgrandompath2);
 
 
-           if (randomNum1 === randomNum2) {
-              document.querySelector('h1').innerHTML = "Draw!";
-            
-         }
+           if (randomNum1 > randomNum2) {
+             document.querySelector('h1').innerHTML= "Player 1 Wins!";
+                       playAudio();
+           }
          else if (randomNum1 < randomNum2) {
            document.querySelector('h1').innerHTML= "Player 2 Wins!";
                     playAudio();
                    }
 
          else {
-                document.querySelector('h1').innerHTML= "Player 1 Wins!";
-             playAudio();
+             document.querySelector('h1').innerHTML = "Draw!";
          }
 }
 function playAudio(){
@@ -34,4 +33,3 @@ var audio1 =new Audio('applause.mp3');
   audio1.play();
 
 }
-        document.querySelector('button').addEventListener('click',rollTheDice);
